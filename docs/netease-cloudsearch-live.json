@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "provider": "netease",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "netease",
+      "synced": true,
+      "lines": 28
+    },
+    "attempts": [
+      {
+        "source": "netease",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Hello",
+    "artist": "Adele",
+    "provider": "netease",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "netease",
+      "synced": true,
+      "lines": 53
+    },
+    "attempts": [
+      {
+        "source": "netease",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "provider": "netease",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "netease",
+      "synced": true,
+      "lines": 40
+    },
+    "attempts": [
+      {
+        "source": "netease",
+        "status": "found"
+      }
+    ]
+  }
+]

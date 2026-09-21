@@ -1,0 +1,289 @@
+[
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "provider": "lrclib",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "lrclib",
+      "synced": true,
+      "lines": 30
+    },
+    "attempts": [
+      {
+        "source": "lrclib",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Hello",
+    "artist": "Adele",
+    "provider": "lrclib",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "lrclib",
+      "synced": true,
+      "lines": 51
+    },
+    "attempts": [
+      {
+        "source": "lrclib",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "provider": "lrclib",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "lrclib",
+      "synced": false,
+      "lines": 75
+    },
+    "attempts": [
+      {
+        "source": "lrclib",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "provider": "netease",
+    "exit_code": 1,
+    "lyrics": null,
+    "attempts": [
+      {
+        "source": "netease",
+        "status": "unavailable",
+        "detail": "API status -462"
+      }
+    ]
+  },
+  {
+    "title": "Hello",
+    "artist": "Adele",
+    "provider": "netease",
+    "exit_code": 1,
+    "lyrics": null,
+    "attempts": [
+      {
+        "source": "netease",
+        "status": "unavailable",
+        "detail": "API status -462"
+      }
+    ]
+  },
+  {
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "provider": "netease",
+    "exit_code": 1,
+    "lyrics": null,
+    "attempts": [
+      {
+        "source": "netease",
+        "status": "unavailable",
+        "detail": "API status -462"
+      }
+    ]
+  },
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "provider": "kugou",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "kugou",
+      "synced": true,
+      "lines": 37
+    },
+    "attempts": [
+      {
+        "source": "kugou",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Hello",
+    "artist": "Adele",
+    "provider": "kugou",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "kugou",
+      "synced": true,
+      "lines": 30
+    },
+    "attempts": [
+      {
+        "source": "kugou",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "provider": "kugou",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "kugou",
+      "synced": true,
+      "lines": 72
+    },
+    "attempts": [
+      {
+        "source": "kugou",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "provider": "qqmusic",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "qqmusic",
+      "synced": true,
+      "lines": 37
+    },
+    "attempts": [
+      {
+        "source": "qqmusic",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Hello",
+    "artist": "Adele",
+    "provider": "qqmusic",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "qqmusic",
+      "synced": true,
+      "lines": 52
+    },
+    "attempts": [
+      {
+        "source": "qqmusic",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "provider": "qqmusic",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "qqmusic",
+      "synced": true,
+      "lines": 72
+    },
+    "attempts": [
+      {
+        "source": "qqmusic",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "provider": "lyricsovh",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "lyricsovh",
+      "synced": false,
+      "lines": 30
+    },
+    "attempts": [
+      {
+        "source": "lyricsovh",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Hello",
+    "artist": "Adele",
+    "provider": "lyricsovh",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "lyricsovh",
+      "synced": false,
+      "lines": 70
+    },
+    "attempts": [
+      {
+        "source": "lyricsovh",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "provider": "lyricsovh",
+    "exit_code": 0,
+    "lyrics": {
+      "source": "lyricsovh",
+      "synced": false,
+      "lines": 50
+    },
+    "attempts": [
+      {
+        "source": "lyricsovh",
+        "status": "found"
+      }
+    ]
+  },
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "provider": "musixmatch",
+    "exit_code": 1,
+    "lyrics": null,
+    "attempts": [
+      {
+        "source": "musixmatch",
+        "status": "not_found"
+      }
+    ]
+  },
+  {
+    "title": "Hello",
+    "artist": "Adele",
+    "provider": "musixmatch",
+    "exit_code": 1,
+    "lyrics": null,
+    "attempts": [
+      {
+        "source": "musixmatch",
+        "status": "unavailable",
+        "detail": "API status 401"
+      }
+    ]
+  },
+  {
+    "title": "Alors on danse",
+    "artist": "Stromae",
+    "provider": "musixmatch",
+    "exit_code": 1,
+    "lyrics": null,
+    "attempts": [
+      {
+        "source": "musixmatch",
+        "status": "unavailable",
+        "detail": "API status 401"
+      }
+    ]
+  }
+]
