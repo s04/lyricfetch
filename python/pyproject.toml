@@ -13,3 +13,13 @@ dependencies = []
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.hatch.build]
+ignore-vcs = true
+exclude = ["**/__pycache__/**"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["lyricfetch"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/lyricfetch", "/tests", "/README.md", "/pyproject.toml", "/LICENSE"]
