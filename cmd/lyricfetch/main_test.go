@@ -17,3 +17,10 @@ func TestInvalidInput(t *testing.T) {
 		}
 	}
 }
+
+func TestHelpSucceeds(t *testing.T) {
+	var out, errOut bytes.Buffer
+	if code := run([]string{"--help"}, strings.NewReader(""), &out, &errOut); code != 0 {
+		t.Fatalf("help exit code %d", code)
+	}
+}

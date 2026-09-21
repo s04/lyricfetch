@@ -4,6 +4,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"flag"
 	"fmt"
 	"io"
@@ -28,6 +29,9 @@ func run(args []string, in io.Reader, out, errOut io.Writer) int {
 	full := flags.Bool("include-text", false, "Include full lyrics in JSON (default: metadata only)")
 	stdin := flags.Bool("stdin", false, "Read Track JSON from stdin instead of command-line metadata")
 	if err := flags.Parse(args); err != nil {
+		if errors.Is(err, flag.ErrHelp) {
+			return 0
+		}
 		return 2
 	}
 	if flags.NArg() != 0 {

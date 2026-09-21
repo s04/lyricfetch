@@ -134,3 +134,28 @@ func TestMusixmatchConcurrentTokenCache(t *testing.T) {
 	}
 	group.Wait()
 }
+
+func TestNetEaseCloudsearchFormAndDuration(t *testing.T) {
+	c := testClient(t, NetEase)
+	calls := 0
+	c.http.Transport = roundTripFunc(func(r *http.Request) (*http.Response, error) {
+		calls++
+		if calls == 1 {
+			if r.Method != http.MethodPost || r.URL.Path != "/api/cloudsearch/pc" {
+				t.Error("expected current cloudsearch POST")
+			}
+			if err := r.ParseForm(); err != nil {
+				t.Fatal(err)
+			}
+			if r.Form.Get("s") != "Song Artist" || r.Form.Get("type") != "1" {
+				t.Error("wrong search form")
+			}
+			return reply(200, `{"code":200,"result":{"songs":[{"id":2,"name":"Song","dt":180000,"ar":[{"name":"Artist"}]}]}}`), nil
+		}
+		return reply(200, `{"code":200,"lrc":{"lyric":"[00:01]Fixture"}}`), nil
+	})
+	result, err := c.Search(context.Background(), Track{Title: "Song", Artist: "Artist", Duration: 180})
+	if err != nil || result.Lyrics == nil || calls != 2 {
+		t.Fatal(result, err, calls)
+	}
+}
